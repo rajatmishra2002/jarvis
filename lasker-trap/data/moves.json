@@ -1,0 +1,894 @@
+{
+ "pieces": [
+  {
+   "id": 0,
+   "sym": "R",
+   "sq": "a1",
+   "xy": [
+    0.5,
+    7.5
+   ]
+  },
+  {
+   "id": 1,
+   "sym": "N",
+   "sq": "b1",
+   "xy": [
+    1.5,
+    7.5
+   ]
+  },
+  {
+   "id": 2,
+   "sym": "B",
+   "sq": "c1",
+   "xy": [
+    2.5,
+    7.5
+   ]
+  },
+  {
+   "id": 3,
+   "sym": "Q",
+   "sq": "d1",
+   "xy": [
+    3.5,
+    7.5
+   ]
+  },
+  {
+   "id": 4,
+   "sym": "K",
+   "sq": "e1",
+   "xy": [
+    4.5,
+    7.5
+   ]
+  },
+  {
+   "id": 5,
+   "sym": "B",
+   "sq": "f1",
+   "xy": [
+    5.5,
+    7.5
+   ]
+  },
+  {
+   "id": 6,
+   "sym": "N",
+   "sq": "g1",
+   "xy": [
+    6.5,
+    7.5
+   ]
+  },
+  {
+   "id": 7,
+   "sym": "R",
+   "sq": "h1",
+   "xy": [
+    7.5,
+    7.5
+   ]
+  },
+  {
+   "id": 8,
+   "sym": "P",
+   "sq": "a2",
+   "xy": [
+    0.5,
+    6.5
+   ]
+  },
+  {
+   "id": 9,
+   "sym": "P",
+   "sq": "b2",
+   "xy": [
+    1.5,
+    6.5
+   ]
+  },
+  {
+   "id": 10,
+   "sym": "P",
+   "sq": "c2",
+   "xy": [
+    2.5,
+    6.5
+   ]
+  },
+  {
+   "id": 11,
+   "sym": "P",
+   "sq": "d2",
+   "xy": [
+    3.5,
+    6.5
+   ]
+  },
+  {
+   "id": 12,
+   "sym": "P",
+   "sq": "e2",
+   "xy": [
+    4.5,
+    6.5
+   ]
+  },
+  {
+   "id": 13,
+   "sym": "P",
+   "sq": "f2",
+   "xy": [
+    5.5,
+    6.5
+   ]
+  },
+  {
+   "id": 14,
+   "sym": "P",
+   "sq": "g2",
+   "xy": [
+    6.5,
+    6.5
+   ]
+  },
+  {
+   "id": 15,
+   "sym": "P",
+   "sq": "h2",
+   "xy": [
+    7.5,
+    6.5
+   ]
+  },
+  {
+   "id": 16,
+   "sym": "p",
+   "sq": "a7",
+   "xy": [
+    0.5,
+    1.5
+   ]
+  },
+  {
+   "id": 17,
+   "sym": "p",
+   "sq": "b7",
+   "xy": [
+    1.5,
+    1.5
+   ]
+  },
+  {
+   "id": 18,
+   "sym": "p",
+   "sq": "c7",
+   "xy": [
+    2.5,
+    1.5
+   ]
+  },
+  {
+   "id": 19,
+   "sym": "p",
+   "sq": "d7",
+   "xy": [
+    3.5,
+    1.5
+   ]
+  },
+  {
+   "id": 20,
+   "sym": "p",
+   "sq": "e7",
+   "xy": [
+    4.5,
+    1.5
+   ]
+  },
+  {
+   "id": 21,
+   "sym": "p",
+   "sq": "f7",
+   "xy": [
+    5.5,
+    1.5
+   ]
+  },
+  {
+   "id": 22,
+   "sym": "p",
+   "sq": "g7",
+   "xy": [
+    6.5,
+    1.5
+   ]
+  },
+  {
+   "id": 23,
+   "sym": "p",
+   "sq": "h7",
+   "xy": [
+    7.5,
+    1.5
+   ]
+  },
+  {
+   "id": 24,
+   "sym": "r",
+   "sq": "a8",
+   "xy": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": 25,
+   "sym": "n",
+   "sq": "b8",
+   "xy": [
+    1.5,
+    0.5
+   ]
+  },
+  {
+   "id": 26,
+   "sym": "b",
+   "sq": "c8",
+   "xy": [
+    2.5,
+    0.5
+   ]
+  },
+  {
+   "id": 27,
+   "sym": "q",
+   "sq": "d8",
+   "xy": [
+    3.5,
+    0.5
+   ]
+  },
+  {
+   "id": 28,
+   "sym": "k",
+   "sq": "e8",
+   "xy": [
+    4.5,
+    0.5
+   ]
+  },
+  {
+   "id": 29,
+   "sym": "b",
+   "sq": "f8",
+   "xy": [
+    5.5,
+    0.5
+   ]
+  },
+  {
+   "id": 30,
+   "sym": "n",
+   "sq": "g8",
+   "xy": [
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "id": 31,
+   "sym": "r",
+   "sq": "h8",
+   "xy": [
+    7.5,
+    0.5
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "i": 0,
+   "notation": "1.d4",
+   "san": "d4",
+   "uci": "d2d4",
+   "color": "w",
+   "id": 11,
+   "sym": "P",
+   "from_sq": "d2",
+   "to_sq": "d4",
+   "from_xy": [
+    3.5,
+    6.5
+   ],
+   "to_xy": [
+    3.5,
+    4.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"
+  },
+  {
+   "i": 1,
+   "notation": "1...d5",
+   "san": "d5",
+   "uci": "d7d5",
+   "color": "b",
+   "id": 19,
+   "sym": "p",
+   "from_sq": "d7",
+   "to_sq": "d5",
+   "from_xy": [
+    3.5,
+    1.5
+   ],
+   "to_xy": [
+    3.5,
+    3.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+   "i": 2,
+   "notation": "2.c4",
+   "san": "c4",
+   "uci": "c2c4",
+   "color": "w",
+   "id": 10,
+   "sym": "P",
+   "from_sq": "c2",
+   "to_sq": "c4",
+   "from_xy": [
+    2.5,
+    6.5
+   ],
+   "to_xy": [
+    2.5,
+    4.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2"
+  },
+  {
+   "i": 3,
+   "notation": "2...e5",
+   "san": "e5",
+   "uci": "e7e5",
+   "color": "b",
+   "id": 20,
+   "sym": "p",
+   "from_sq": "e7",
+   "to_sq": "e5",
+   "from_xy": [
+    4.5,
+    1.5
+   ],
+   "to_xy": [
+    4.5,
+    3.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp2ppp/8/3pp3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+   "i": 4,
+   "notation": "3.dxe5",
+   "san": "dxe5",
+   "uci": "d4e5",
+   "color": "w",
+   "id": 11,
+   "sym": "P",
+   "from_sq": "d4",
+   "to_sq": "e5",
+   "from_xy": [
+    3.5,
+    4.5
+   ],
+   "to_xy": [
+    4.5,
+    3.5
+   ],
+   "captured": {
+    "id": 20,
+    "sym": "p",
+    "sq": "e5",
+    "xy": [
+     4.5,
+     3.5
+    ]
+   },
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp2ppp/8/3pP3/2P5/8/PP2PPPP/RNBQKBNR b KQkq - 0 3"
+  },
+  {
+   "i": 5,
+   "notation": "3...d4",
+   "san": "d4",
+   "uci": "d5d4",
+   "color": "b",
+   "id": 19,
+   "sym": "p",
+   "from_sq": "d5",
+   "to_sq": "d4",
+   "from_xy": [
+    3.5,
+    3.5
+   ],
+   "to_xy": [
+    3.5,
+    4.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp2ppp/8/4P3/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+   "i": 6,
+   "notation": "4.e3",
+   "san": "e3",
+   "uci": "e2e3",
+   "color": "w",
+   "id": 12,
+   "sym": "P",
+   "from_sq": "e2",
+   "to_sq": "e3",
+   "from_xy": [
+    4.5,
+    6.5
+   ],
+   "to_xy": [
+    4.5,
+    5.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqkbnr/ppp2ppp/8/4P3/2Pp4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 4"
+  },
+  {
+   "i": 7,
+   "notation": "4...Bb4+",
+   "san": "Bb4+",
+   "uci": "f8b4",
+   "color": "b",
+   "id": 29,
+   "sym": "b",
+   "from_sq": "f8",
+   "to_sq": "b4",
+   "from_xy": [
+    5.5,
+    0.5
+   ],
+   "to_xy": [
+    1.5,
+    4.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": true,
+   "checkers": [
+    {
+     "sq": "b4",
+     "xy": [
+      1.5,
+      4.5
+     ],
+     "sym": "b"
+    }
+   ],
+   "king_xy": [
+    4.5,
+    7.5
+   ],
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1bPp4/4P3/PP3PPP/RNBQKBNR w KQkq - 1 5"
+  },
+  {
+   "i": 8,
+   "notation": "5.Bd2",
+   "san": "Bd2",
+   "uci": "c1d2",
+   "color": "w",
+   "id": 2,
+   "sym": "B",
+   "from_sq": "c1",
+   "to_sq": "d2",
+   "from_xy": [
+    2.5,
+    7.5
+   ],
+   "to_xy": [
+    3.5,
+    6.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1bPp4/4P3/PP1B1PPP/RN1QKBNR b KQkq - 2 5"
+  },
+  {
+   "i": 9,
+   "notation": "5...dxe3",
+   "san": "dxe3",
+   "uci": "d4e3",
+   "color": "b",
+   "id": 19,
+   "sym": "p",
+   "from_sq": "d4",
+   "to_sq": "e3",
+   "from_xy": [
+    3.5,
+    4.5
+   ],
+   "to_xy": [
+    4.5,
+    5.5
+   ],
+   "captured": {
+    "id": 12,
+    "sym": "P",
+    "sq": "e3",
+    "xy": [
+     4.5,
+     5.5
+    ]
+   },
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1bP5/4p3/PP1B1PPP/RN1QKBNR w KQkq - 0 6"
+  },
+  {
+   "i": 10,
+   "notation": "6.Bxb4",
+   "san": "Bxb4",
+   "uci": "d2b4",
+   "color": "w",
+   "id": 2,
+   "sym": "B",
+   "from_sq": "d2",
+   "to_sq": "b4",
+   "from_xy": [
+    3.5,
+    6.5
+   ],
+   "to_xy": [
+    1.5,
+    4.5
+   ],
+   "captured": {
+    "id": 29,
+    "sym": "b",
+    "sq": "b4",
+    "xy": [
+     1.5,
+     4.5
+    ]
+   },
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/4p3/PP3PPP/RN1QKBNR b KQkq - 0 6"
+  },
+  {
+   "i": 11,
+   "notation": "6...exf2+",
+   "san": "exf2+",
+   "uci": "e3f2",
+   "color": "b",
+   "id": 19,
+   "sym": "p",
+   "from_sq": "e3",
+   "to_sq": "f2",
+   "from_xy": [
+    4.5,
+    5.5
+   ],
+   "to_xy": [
+    5.5,
+    6.5
+   ],
+   "captured": {
+    "id": 13,
+    "sym": "P",
+    "sq": "f2",
+    "xy": [
+     5.5,
+     6.5
+    ]
+   },
+   "promo": null,
+   "check": true,
+   "checkers": [
+    {
+     "sq": "f2",
+     "xy": [
+      5.5,
+      6.5
+     ],
+     "sym": "p"
+    }
+   ],
+   "king_xy": [
+    4.5,
+    7.5
+   ],
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/8/PP3pPP/RN1QKBNR w KQkq - 0 7"
+  },
+  {
+   "i": 12,
+   "notation": "7.Ke2",
+   "san": "Ke2",
+   "uci": "e1e2",
+   "color": "w",
+   "id": 4,
+   "sym": "K",
+   "from_sq": "e1",
+   "to_sq": "e2",
+   "from_xy": [
+    4.5,
+    7.5
+   ],
+   "to_xy": [
+    4.5,
+    6.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/8/PP2KpPP/RN1Q1BNR b kq - 1 7"
+  },
+  {
+   "i": 13,
+   "notation": "7...fxg1=N+",
+   "san": "fxg1=N+",
+   "uci": "f2g1n",
+   "color": "b",
+   "id": 19,
+   "sym": "p",
+   "from_sq": "f2",
+   "to_sq": "g1",
+   "from_xy": [
+    5.5,
+    6.5
+   ],
+   "to_xy": [
+    6.5,
+    7.5
+   ],
+   "captured": {
+    "id": 6,
+    "sym": "N",
+    "sq": "g1",
+    "xy": [
+     6.5,
+     7.5
+    ]
+   },
+   "promo": "n",
+   "check": true,
+   "checkers": [
+    {
+     "sq": "g1",
+     "xy": [
+      6.5,
+      7.5
+     ],
+     "sym": "n"
+    }
+   ],
+   "king_xy": [
+    4.5,
+    6.5
+   ],
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/8/PP2K1PP/RN1Q1BnR w kq - 0 8"
+  },
+  {
+   "i": 14,
+   "notation": "8.Rxg1",
+   "san": "Rxg1",
+   "uci": "h1g1",
+   "color": "w",
+   "id": 7,
+   "sym": "R",
+   "from_sq": "h1",
+   "to_sq": "g1",
+   "from_xy": [
+    7.5,
+    7.5
+   ],
+   "to_xy": [
+    6.5,
+    7.5
+   ],
+   "captured": {
+    "id": 19,
+    "sym": "n",
+    "sq": "g1",
+    "xy": [
+     6.5,
+     7.5
+    ]
+   },
+   "promo": null,
+   "check": false,
+   "checkers": [],
+   "king_xy": null,
+   "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/8/PP2K1PP/RN1Q1BR1 b kq - 0 8"
+  },
+  {
+   "i": 15,
+   "notation": "8...Bg4+",
+   "san": "Bg4+",
+   "uci": "c8g4",
+   "color": "b",
+   "id": 26,
+   "sym": "b",
+   "from_sq": "c8",
+   "to_sq": "g4",
+   "from_xy": [
+    2.5,
+    0.5
+   ],
+   "to_xy": [
+    6.5,
+    4.5
+   ],
+   "captured": null,
+   "promo": null,
+   "check": true,
+   "checkers": [
+    {
+     "sq": "g4",
+     "xy": [
+      6.5,
+      4.5
+     ],
+     "sym": "b"
+    }
+   ],
+   "king_xy": [
+    4.5,
+    6.5
+   ],
+   "fen": "rn1qk1nr/ppp2ppp/8/4P3/1BP3b1/8/PP2K1PP/RN1Q1BR1 w kq - 1 9"
+  }
+ ],
+ "finale": {
+  "king_nbrs": [
+   {
+    "sq": "d1",
+    "xy": [
+     3.5,
+     7.5
+    ],
+    "black_attacks": true,
+    "occupied": true
+   },
+   {
+    "sq": "e1",
+    "xy": [
+     4.5,
+     7.5
+    ],
+    "black_attacks": false,
+    "occupied": false
+   },
+   {
+    "sq": "f1",
+    "xy": [
+     5.5,
+     7.5
+    ],
+    "black_attacks": false,
+    "occupied": true
+   },
+   {
+    "sq": "d2",
+    "xy": [
+     3.5,
+     6.5
+    ],
+    "black_attacks": true,
+    "occupied": false
+   },
+   {
+    "sq": "f2",
+    "xy": [
+     5.5,
+     6.5
+    ],
+    "black_attacks": false,
+    "occupied": false
+   },
+   {
+    "sq": "d3",
+    "xy": [
+     3.5,
+     5.5
+    ],
+    "black_attacks": true,
+    "occupied": false
+   },
+   {
+    "sq": "e3",
+    "xy": [
+     4.5,
+     5.5
+    ],
+    "black_attacks": false,
+    "occupied": false
+   },
+   {
+    "sq": "f3",
+    "xy": [
+     5.5,
+     5.5
+    ],
+    "black_attacks": true,
+    "occupied": false
+   }
+  ],
+  "white_queen": {
+   "sq": "d1",
+   "xy": [
+    3.5,
+    7.5
+   ]
+  },
+  "black_queen": {
+   "sq": "d8",
+   "xy": [
+    3.5,
+    0.5
+   ]
+  },
+  "white_legal": [
+   [
+    "e2e3",
+    true
+   ],
+   [
+    "e2f2",
+    true
+   ],
+   [
+    "e2e1",
+    true
+   ]
+  ]
+ }
+}

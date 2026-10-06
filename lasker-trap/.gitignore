@@ -1,0 +1,5 @@
+node_modules/
+out/chunks/
+*.log
+data/song.mp3
+data/song_full.wav
