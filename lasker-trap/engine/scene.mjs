@@ -5,6 +5,7 @@ import { clamp, lerp, smooth, smoother, easeOutCubic, easeOutBack, easeInOutCubi
 import { W, H, SCALE, camAt, makeProj } from './camera.mjs';
 import * as FX from './fx.mjs';
 import * as FIN from './finale.mjs';
+import * as HUD from './hud.mjs';
 import * as S from './state.mjs';
 import { drawPiece } from './pieces.mjs';
 
@@ -105,8 +106,9 @@ export function renderFrame(t, opts = {}) {
   FX.drawUnder(M, E, p, cam, t); lap('fxUnder');
   drawPieces(M, E, p, cam, t); lap('pieces');
   FX.drawOver(M, E, p, cam, t); lap('fxOver');
-  drawOverlays(M, E, p, cam, t); lap('overlays');
+  drawOverlays(M, E, p, cam, t); HUD.drawCoords(M, p, cam, t); lap('overlays');
   drawDust(M, E, p, cam, t); lap('dust');
+  HUD.drawNotation(M, t);
   FIN.drawFinale(M, E, t); lap('finale');
   if (opts.extra) opts.extra(M, E, p, cam, t);
 
@@ -222,7 +224,7 @@ function badgeAt(c, e, p, cam, t) {
     const pop = easeOutBack(age / 0.28, 2.2) * (1 - out);
     if (pop <= 0.01) continue;
     const q = p(m.to_xy[0] + 0.40, m.to_xy[1] - 0.40, {});
-    const r = 0.21 * cam.z * q.s * pop;
+    const r = 0.25 * cam.z * q.s * pop;
     // ripple rings
     for (let k = 0; k < 2; k++) {
       const u = clamp((age - k * 0.16) / 0.75);
@@ -299,8 +301,8 @@ function postProcess(t, heat, beat) {
   M.globalAlpha = 1; M.globalCompositeOperation = 'source-over';
   lap('p_bloomadd');
   // vignette
-  const vg = M.createRadialGradient(main.width / 2, main.height * 0.48, main.height * 0.2, main.width / 2, main.height * 0.48, main.height * 0.74);
-  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, `rgba(0,0,0,${0.72 + 0.15 * heat})`);
+  const vg = M.createRadialGradient(main.width / 2, main.height * 0.48, main.height * 0.3, main.width / 2, main.height * 0.48, main.height * 0.82);
+  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, `rgba(0,0,0,${0.5 + 0.15 * heat})`);
   M.fillStyle = vg; M.fillRect(0, 0, main.width, main.height);
   lap('p_vig');
   // grain

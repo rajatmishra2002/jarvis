@@ -12,7 +12,7 @@ const isLight = (c) => !c || c === '#fff' || c === '#ffffff' || c === 'white';
 
 // palette: [cold, hot] pairs
 const WHITE = { top: [255, 255, 253], bot: [214, 217, 222], line: [118, 122, 128], hotTop: [255, 238, 222], hotBot: [226, 178, 142], hotLine: [120, 66, 40] };
-const BLACK = { top: [118, 118, 122], bot: [78, 78, 83], line: [38, 38, 42], hotTop: [96, 80, 76], hotBot: [58, 46, 44], hotLine: [24, 14, 10], detail: [158, 158, 162], hotDetail: [190, 120, 80] };
+const BLACK = { top: [118, 118, 122], bot: [78, 78, 83], line: [38, 38, 42], hotTop: [150, 128, 120], hotBot: [98, 82, 76], hotLine: [34, 20, 14], detail: [158, 158, 162], hotDetail: [200, 130, 90] };
 
 /** Draws piece `sym` in a 45x45 box at the current transform. */
 export function drawPiece(ctx, sym, { heat = 0, alpha = 1, rim = null } = {}) {
@@ -26,6 +26,18 @@ export function drawPiece(ctx, sym, { heat = 0, alpha = 1, rim = null } = {}) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   // pass 1: fat dark outline, then fat gradient fill -> chunky "sticker" silhouette
   const FAT = 1.5;
+  // warm rim light so dark pieces separate from the charred dark squares
+  if (!white && heat > 0.25) {
+    const ra = Math.min(1, (heat - 0.2) / 0.5) * 0.8;
+    for (const op of PATHS[sym]) {
+      if (!(op.fill && op.fill !== 'none')) continue;
+      ctx.save();
+      if (op.tf) ctx.transform(...op.tf);
+      ctx.strokeStyle = rgb([236, 176, 128], ra); ctx.lineWidth = Math.max(op.sw, 1.5) + FAT + 1.7 + 2.6;
+      ctx.stroke(op.path);
+      ctx.restore();
+    }
+  }
   for (const op of PATHS[sym]) {
     if (!(op.fill && op.fill !== 'none')) continue;
     ctx.save();

@@ -12,6 +12,17 @@ arrow/ray trails, ember-and-fire second half, kinetic text finale).
 The line is validated move-by-move with python-chess (`tools/make_moves.py`). In the final position every legal
 White reply (Ke1, Kf2, Ke3) loses the queen to the Bg4 pin – that is what the "nowhere to run" marks show.
 
+## Camera: built for learning
+
+The camera is **teaching-first**: the whole board is on screen by default (≈124–140 px per square, 8×8 fully visible,
+rotation within ±3.4°), and it only pushes in — never past ≈197 px per square, i.e. still ≥5 squares across — for the
+moments where the detail *is* the lesson (the dxe5 capture, the f2/g1 build-up and the promotion menu, the Bg4 pin).
+A move chip under the board (white/black disc + notation, e.g. `7… fxg1=N+`) and a–h / 1–8 coordinates along the
+board edge let viewers follow every move. Measured over all 3,558 frames (`node tools/camstats.mjs`): median 49 of 64
+squares on screen, never fewer than 25. The previous cut showed a median of 17.
+
+`node tools/fencheck.mjs` proves the pieces drawn after every move equal python-chess' position for all 16 moves.
+
 ## How the sync works
 
 The song is *sung* and the lyrics narrate the trap, so every move is locked to a sung word / audible hit, not to a
@@ -61,6 +72,7 @@ python3 tools/analyze_audio.py    # envelopes/onsets -> data/audio_events.json (
 ffmpeg -i data/song.mp3 -ar 48000 -ac 2 data/song_full.wav
 node tools/render_all.mjs out/lasker_trap.mp4 4      # 4 parallel workers, ~7 min on 4 cores
 SCALE=0.5 node tools/preview.mjs /tmp/p 3.7 26.9 57.9 # quick half-res stills
+node tools/camstats.mjs && node tools/fencheck.mjs      # zoom / legibility numbers + chess-position check
 ```
 
 Piece silhouettes are the cburnett set from python-chess (GPLv2+), restyled; fonts are Anton / Inter (OFL).

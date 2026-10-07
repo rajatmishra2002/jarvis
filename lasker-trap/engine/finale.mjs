@@ -92,7 +92,7 @@ function fit(c, text, maxW, size, spacing) {
 export function drawFinale(c, e, t) {
   if (t < 52.0) return;
   // dimming veil so the type reads on the burning board
-  const veil = 0.74 * smooth((t - 52.34) / 1.0) * (1 - 0.30 * smooth((t - 57.7) / 0.5));
+  const veil = 0.58 * smooth((t - 52.34) / 1.0) * (1 - 0.30 * smooth((t - 57.7) / 0.5));
   if (veil > 0) {
     c.save(); c.fillStyle = `rgba(4,2,2,${veil})`; c.fillRect(0, 0, W, H);
     const rg = c.createRadialGradient(W / 2, H * 0.5, 80, W / 2, H * 0.5, H * 0.55); rg.addColorStop(0, `rgba(0,0,0,${0.35 * smooth((t - 53.2) / 0.6)})`); rg.addColorStop(1, 'rgba(0,0,0,0)');

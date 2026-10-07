@@ -363,7 +363,7 @@ function promotionFx(c, e, p, cam, t) {
 export function fireFx(c, e, p, cam, t) {
   const H0 = S.heatAt(t);
   if (H0 < 0.05 || t < S.IGNITE.t) return;
-  const zs = cam.z / 250;
+  const zs = Math.min(2, Math.max(0.75, cam.z / 250));
   // embers
   const N = 230;
   c.save(); c.globalCompositeOperation = 'lighter';
